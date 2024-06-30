@@ -9,3 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+//add code to open the pages in new tab
+document.addEventListener('DOMContentLoaded', () => {
+    const projectLinks = document.querySelectorAll('.project-link');
+    projectLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            window.open(link.href, '_blank');
+        });
+    });
+});

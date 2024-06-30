@@ -9,12 +9,10 @@ body {
     line-height: 1.6;
     background-color: #f8f9fa;
     color: #333;
-    overflow: hidden;
 }
 
 header {
     background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
-    /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%); */
     padding: 1rem;
 }
 
@@ -58,68 +56,52 @@ nav a:hover::before {
     transform-origin: bottom left;
 }
 
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem;
+}
 
-.hero-container {
+.project-card {
     background: rgba(255, 255, 255, 0.53);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.426);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.3px);
     -webkit-backdrop-filter: blur(5.3px);
     border: 1px solid rgba(255, 255, 255, 0.23);
-    height: 90vh;
-    padding: 4rem 1rem;
+    padding: 3.5rem;
+    margin: 1rem;
+    max-width: 1500px;
+    width: 100%;
     text-align: center;
-    margin-bottom: 2rem;
-    position: relative;
 }
 
-.hero-content {
-    position: absolute;
-    bottom: 250px;
-
-    right: 100px;
-
-    width: auto;
-
-    max-width: 800px;
-    text-align: right;
-
+.project-card img {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 1rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    border-radius: 16px;
+    transition: transform 0.3s ease;
 }
 
-.hero-content h1 {
-    font-size: 3rem;
+.project-card img:hover {
+    transform: scale(1.05);
+}
+
+
+.project-card h3 {
+    font-size: 1.8rem;
     margin-bottom: 1rem;
     color: #343a40;
 }
 
-.hero-content p {
-    text-align: right;
-    word-spacing: 5px;
+.project-card p {
     font-size: 1.2rem;
     color: #555;
-}
-
-.hero-links {
-    position: absolute;
-    bottom: 170px;
-    right: 110px;
-    display: flex;
-    gap: 50px;
-
-}
-
-.hero-links a {
-    color: #000;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-}
-
-.hero-links a:hover {
-    color: #ff8000;
-}
-
-section {
-    padding: 4rem 1rem;
+    margin-bottom: 1.5rem;
 }
 
 button {
@@ -127,8 +109,6 @@ button {
     appearance: none;
     background-color: #fff;
     border-radius: 24px;
-    margin-left: 10px;
-    margin-top: 20px;
     border-style: none;
     box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
     box-sizing: border-box;
@@ -193,78 +173,31 @@ button:disabled {
     box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
 }
 
-
 @media (max-width: 768px) {
-
-    body {
-        overflow: auto;
-    }
-
-    header {
-        height: 90vh;
-    }
-
     nav a {
         font-size: 1rem;
         margin: 0.5rem 0;
     }
 
-    .hero-container {
-        height: auto;
-        max-height: 800px;
+    .project-container {
+        padding: 2rem 1rem;
     }
 
-    .hero-content {
-        position: static;
-        bottom: auto;
-        right: auto;
-        /* text-align: center; */
+    .project-card {
+        padding: 1rem;
+        margin: 0.5rem;
     }
 
-    .hero-content h1 {
-        text-align: center;
-        font-size: 2rem;
-    }
-
-    .hero-content h2{
-        text-align: center;
-        font-size: 1.2rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
-    /* move the button to the middle or center of the screen */
-    .hero-links {
-        position: static;
-        bottom: auto;
-        right: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    button {
-        position: static;
-        display: flex;
-        /* margin-top: 20px; */
-        margin: 0 auto;
-        font-size: 12px;
-        padding: 2px 16px;
-        justify-content: center; /* Center the button horizontally */
-    }
-    
-
-    .hero-links a {
+    .project-card h3 {
         font-size: 1.5rem;
     }
 
-    section {
-        padding: 2rem 1rem;
+    .project-card p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 2px 16px;
     }
 }
