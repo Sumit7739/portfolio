@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumit Srivastav - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Sumit Srivastava</h1>
+                    <h2>Full Stack Web Developer</h2> <br>
+                    <p>Hi there! I'm a passionate web developer with a strong background in creating dynamic, user-centric
+                        web applications. I love leveraging cutting-edge technologies to solve complex problems and deliver
+                        innovative solutions. With a portfolio of diverse real-world projects, I bring a blend of
+                        creativity, technical expertise, and problem-solving skills to every project I undertake.</p>
+                </div>
+               
+                        <a href="mailto:srisumit4@gmail.com"><i class="icon fas fa-envelope"></i></a>
+                   
+                        <a href="https://github.com/Sumit7739" target="_blank"><i class="icon fab fa-github"></i></a>
+                   
+                        <a href="https://www.linkedin.com/in/sumit-srivastava-46a41728b/" target="_blank"><i class="icon fab fa-linkedin"></i></a>
+                   
+                </div>
+            </div>
+    </header>
+    
+    <main>
+        <!-- <section id="about">
+            <div class="about-container">
+                <h2>About Me</h2>
+                <p>Hi there! I'm a passionate web developer with a strong background in creating dynamic, user-centric
+                    web applications. I love leveraging cutting-edge technologies to solve complex problems and deliver
+                    innovative solutions. With a portfolio of diverse real-world projects, I bring a blend of
+                    creativity, technical expertise, and problem-solving skills to every project I undertake.</p>
+            </div>
+        </section> -->
+
+        <section id="skills">
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>Programming Languages & Frameworks</h3>
+                    <ul>
+                        <li>JavaScript (ES6+)</li>
+                        <li>HTML5, CSS3 (Sass/SCSS)</li>
+                        <li>React.js, Redux</li>
+                        <li>Node.js, Express.js</li>
+                        <li>TypeScript</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Database Management</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>Redis</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & Technologies</h3>
+                    <ul>
+                        <li>Git, GitHub</li>
+                        <li>Docker</li>
+                        <li>RESTful APIs</li>
+                        <li>Agile/Scrum methodology</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="project-container">
+                <div class="project-card">
+                    <h3>Inner-Circle CRM</h3>
+                    <p>Inner-Circle is a comprehensive CRM solution developed for Chai Junction Cafe, aimed at
+                        revolutionizing customer relationship management. Features include managing customer data,
+                        loyalty programs, and cafe operations with a redesigned UI for enhanced user experience.</p>
+                    <button onclick="window.location.href='inner-circle.html'">View Project</button>
+                </div>
+                <div class="project-card">
+                    <h3>Courier Management System</h3>
+                    <p>Designed and developed a robust courier management system to streamline operations for courier
+                        businesses. Features include managing customer data, tracking dues and bills, automating payment
+                        reminders, and offering real-time tracking for packages.</p>
+                    <button onclick="window.location.href='https://github.com/Sumit7739/courier'">View Project</button>
+                </div>
+                <div class="project-card">
+                    <h3>Invenio Inventory & Sales Management</h3>
+                    <p>Invenio is a feature-rich inventory and sales management system with advanced reporting and
+                        analytics capabilities. Features include tracking inventory levels, managing sales orders,
+                        generating reports, and providing actionable insights through data analytics.</p>
+                    <button onclick="window.location.href='https://github.com/Sumit7739/invenio'">View Project</button>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-container">
+                <div class="contact-card">
+                    <h2>Email</h2>
+                    <a href="mailto:srisumit4@gmail.com"><i class="icon fas fa-envelope"></i> srisumit4@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <h2>Github</h2>
+                    <a href="https://github.com/Sumit7739" target="_blank"><i class="icon fab fa-github"></i> Github</a>
+                </div>
+                <div class="contact-card">
+                    <h2>LinkedIn</h2>
+                    <a href="https://www.linkedin.com/in/sumit-srivastava-46a41728b/" target="_blank"><i class="icon fab fa-linkedin"></i> LinkedIn Profile</a>
+                </div>
+               
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="content-container">
+            <p>&copy; 2024 Sumit Srivastav</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+/* Global Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Text color */
+}
+
+/* Header Styles */
+header {
+    background: #fff;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    padding-right: 20px; /* Optional: Add some padding to the right */
+}
+
+nav a {
+    font-size: 1.3em;
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 10px;
+    position: relative; /* Needed for pseudo-element positioning */
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+/* Add hover effect for nav a */
+nav a:hover {
+    text-decoration: none; /* Remove default underline */
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Height of the underline */
+    bottom: 0;
+    left: 0;
+    background-color: #ffa600; /* Color of the underline */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.hero-container {
+    background: #fff;
+    height: 90vh;
+    padding: 4rem 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 200px; /* Position the content 20px from the bottom */
+    right: 100px;  /* Position the content 20px from the right */
+    width: auto;  /* Adjust the width to fit the content */
+    max-width: 800px;
+    text-align: right; /* Align text to the right */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #343a40;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Main Sections */
+section {
+    padding: 4rem 1rem;
+}
+
+.about-container,
+.skills-container,
+.project-container,
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff; /* White background */
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.about-container h2,
+.skills-container h3,
+.project-container h3,
+.contact-container h2 {
+    margin-bottom: 1rem;
+    color: #343a40; /* Dark text color */
+}
+
+.about-container p {
+    margin-bottom: 1rem;
+    color: #666; /* Medium gray text color */
+}
+
+.skills-container ul,
+.skill-card ul {
+    list-style-type: none;
+}
+
+.skills-container ul li,
+.skill-card ul li {
+    margin-bottom: 0.5rem;
+}
+
+.skill-card {
+    margin-bottom: 2rem;
+}
+
+.project-card {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    margin-bottom: 1rem;
+    color: #343a40; /* Dark text color */
+}
+
+.project-card p {
+    margin-bottom: 1rem;
+    color: #666; /* Medium gray text color */
+}
+
+.project-card button {
+    display: inline-block;
+    background-color: #343a40; /* Dark background color for buttons */
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card button:hover {
+    background-color: #555; /* Darker background color on hover */
+}
+
+/* Contact Cards */
+.contact-card {
+    background-color: #fff; /* White background */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.contact-card h2 {
+    margin-bottom: 0.5rem;
+    color: #343a40; /* Dark text color */
+}
+
+.contact-card a {
+    color: #343a40; /* Dark text color */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.contact-card a .icon {
+    margin-right: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40; /* Dark background color for footer */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+
+    nav a {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .hero-container{
+        height: 50vh;
+    }
+
+    .hero-content {
+        position: static;
+        bottom: auto;
+        right: auto;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .about-container,
+    .skills-container,
+    .project-container,
+    .contact-container {
+        max-width: 95%;
+    }
+
+    .project-card {
+        margin-bottom: 1rem;
+    }
+
+    .contact-card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Add more responsive styles for smaller screens as needed */
