@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <nav class="teal">
+        <!-- <div class="nav-wrapper container"> -->
+        <a href="#!" class="brand-logo">Contact</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+        </ul>
+    </nav>
+
+    <div class="container main-container">
+        <h4 class="center-align">Get in Touch</h4>
+        <div class="row">
+            <form class="col s12" action="https://formspree.io/f/mpwazwnr" method="POST">
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <input id="name" type="text" name="name" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="email" type="email" name="_replyto" required>
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="message" class="materialize-textarea" name="message" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                </div>
+                <div class="row center-align">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container social-media-links center-align">
+        <h5>Follow Me</h5>
+        <a href="https://github.com/Sumit7739" class="btn-floating btn-large waves-effect waves-light black"><i
+                class="icon fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sumit-srivastava-46a41728b/"
+            class="btn-floating btn-large waves-effect waves-light blue"><i class="icon fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100024807246090"
+            class="btn-floating btn-large waves-effect waves-light light-blue"><i class="fab fa-facebook"></i></a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+</html>
